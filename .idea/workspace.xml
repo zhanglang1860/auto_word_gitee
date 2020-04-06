@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b61773cf-16a4-4355-a7c1-a006fe9551bd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/views.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/auto_word$odoo_bin.coverage" NAME="odoo-bin Coverage Results" MODIFIED="1576412895895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>架空长度</find>
+      <find>investment_E3</find>
+      <find>road_1_num</find>
+      <find>self.turbine_numbers</find>
+      <find>main_booster_station_num</find>
+      <find>overhead_line_num</find>
+      <find>dict_3_word_post</find>
+      <find>exceptions</find>
+      <find>turbine_numbers_suggestion</find>
+      <find>auto_word_economy</find>
+      <find>Dict_12_Final</find>
+      <find>Dict_13_Final</find>
+      <find>dict_8_word_post</find>
+      <find>dict_5_word_post</find>
+      <find>详细用量表</find>
+      <find>re.content_id.rate</find>
+      <find>dict_1_word_post</find>
+      <find>折减率</find>
+      <find>auto_word_wind_res</find>
+      <find>reportfile_name</find>
+      <find>rate</find>
+      <find>electrical_path</find>
+      <find>工程任务和规模</find>
+      <find>doc_4</find>
+      <find>report_attachment_id</find>
+      <find>get_dict_electrical_firstsec</find>
+      <find>self.env['auto_word.project']</find>
+      <find>generate_electrical_docx</find>
+      <find>path_images</find>
+      <find>主变压器数量</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="938d3cd8cc29c086a83f226d7ca0422c97a6ee15" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PDuREqgWEIU23RgnwoaiHBpSDK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="auto_word" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="path" value="D:\GOdoo12_community\runtime\bin;D:\GOdoo12_community\runtime\python;D:\GOdoo12_community\runtime\pgsql\bin;D:\GOdoo12_community\runtime\win32\wkhtmltopdf;D:\GOdoo12_community\runtime\win32\nodejs" />
+      </envs>
+      <option name="SDK_HOME" value="D:\GOdoo12_community\runtime\python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../source/odoo-bin" />
+      <option name="PARAMETERS" value="-c D:\GOdoo12_community\bin\odoo.conf -u auto_word,library_member,library_app" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="odoo-bin" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="auto_word" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="path" value="D:\GOdoo12_community\runtime\bin;D:\GOdoo12_community\runtime\python;D:\GOdoo12_community\runtime\pgsql\bin;D:\GOdoo12_community\runtime\win32\wkhtmltopdf;D:\GOdoo12_community\runtime\win32\nodejs" />
+      </envs>
+      <option name="SDK_HOME" value="D:\GOdoo12_community\runtime\python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../source/odoo-bin" />
+      <option name="PARAMETERS" value="-c D:\GOdoo12_community\bin\odoo.conf -u auto_word,library_member,library_app" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b61773cf-16a4-4355-a7c1-a006fe9551bd" name="Default Changelist" comment="" />
+      <created>1554457365002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554457365002</updated>
+      <workItem from="1554457366941" duration="2000" />
+      <workItem from="1555593606619" duration="166000" />
+      <workItem from="1559699894612" duration="80000" />
+      <workItem from="1561179921459" duration="595000" />
+      <workItem from="1565420978606" duration="14000" />
+      <workItem from="1574473883887" duration="27000" />
+      <workItem from="1574473915111" duration="692000" />
+      <workItem from="1574571288439" duration="715000" />
+      <workItem from="1574582307722" duration="9617000" />
+      <workItem from="1574602845070" duration="1979000" />
+      <workItem from="1574778639345" duration="2802000" />
+      <workItem from="1574860039174" duration="641000" />
+      <workItem from="1574860696785" duration="1813000" />
+      <workItem from="1574946944437" duration="5884000" />
+      <workItem from="1575075193061" duration="272000" />
+      <workItem from="1575095623524" duration="11213000" />
+      <workItem from="1575169929057" duration="4109000" />
+      <workItem from="1575188955073" duration="1652000" />
+      <workItem from="1575545559484" duration="1098000" />
+      <workItem from="1575671154597" duration="538000" />
+      <workItem from="1575671829520" duration="822000" />
+      <workItem from="1575672655454" duration="321000" />
+      <workItem from="1575673314089" duration="281000" />
+      <workItem from="1575677878090" duration="231000" />
+      <workItem from="1575678130056" duration="52000" />
+      <workItem from="1575678493393" duration="667000" />
+      <workItem from="1575679560911" duration="115000" />
+      <workItem from="1575711510166" duration="2748000" />
+      <workItem from="1575979776766" duration="4261000" />
+      <workItem from="1576072131864" duration="2641000" />
+      <workItem from="1576105396057" duration="633000" />
+      <workItem from="1576156165899" duration="1760000" />
+      <workItem from="1576194160536" duration="157000" />
+      <workItem from="1576236857038" duration="2767000" />
+      <workItem from="1576279538682" duration="487000" />
+      <workItem from="1576376466643" duration="14562000" />
+      <workItem from="1576452575272" duration="465000" />
+      <workItem from="1582210843114" duration="495000" />
+      <workItem from="1582211371564" duration="27000" />
+    </task>
+    <task id="LOCAL-00001" summary="home 20191124">
+      <created>1574602904229</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574602904229</updated>
+    </task>
+    <task id="LOCAL-00002" summary="home 20191124">
+      <created>1574781433942</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574781433942</updated>
+    </task>
+    <task id="LOCAL-00003" summary="home 20191124">
+      <created>1575124008838</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575124008838</updated>
+    </task>
+    <task id="LOCAL-00004" summary="home 20191124">
+      <created>1575172773357</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575172773357</updated>
+    </task>
+    <task id="LOCAL-00005" summary="home 20191201">
+      <created>1575172822310</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575172822311</updated>
+    </task>
+    <task id="LOCAL-00006" summary="home 20191201">
+      <created>1575192382225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575192382225</updated>
+    </task>
+    <task id="LOCAL-00007" summary="home 20191201">
+      <created>1575673493141</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575673493141</updated>
+    </task>
+    <task id="LOCAL-00008" summary="home 20191207">
+      <created>1575677989500</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575677989500</updated>
+    </task>
+    <task id="LOCAL-00009" summary="home 20191207">
+      <created>1575678177342</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575678177342</updated>
+    </task>
+    <task id="LOCAL-00010" summary="home 20191207">
+      <created>1575679517903</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575679517903</updated>
+    </task>
+    <task id="LOCAL-00011" summary="home 20191207">
+      <created>1575679577638</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575679577638</updated>
+    </task>
+    <task id="LOCAL-00012" summary="home 20191207 发电量方案名称解决">
+      <created>1575712728982</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575712728982</updated>
+    </task>
+    <task id="LOCAL-00013" summary="home 20191207 发电量方案名称解决">
+      <created>1575714239363</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575714239363</updated>
+    </task>
+    <task id="LOCAL-00014" summary="home 20191207 发电量方案名称解决">
+      <created>1575984856647</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1575984856647</updated>
+    </task>
+    <task id="LOCAL-00015" summary="home 20191207 发电量方案名称解决">
+      <created>1576078688692</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1576078688692</updated>
+    </task>
+    <task id="LOCAL-00016" summary="home 20191207 发电量方案名称解决">
+      <created>1576105430685</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1576105430685</updated>
+    </task>
+    <task id="LOCAL-00017" summary="home 20191207 发电量方案名称解决">
+      <created>1576157923709</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1576157923709</updated>
+    </task>
+    <task id="LOCAL-00018" summary="home 20191207 发电量方案名称解决">
+      <created>1576194292145</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576194292145</updated>
+    </task>
+    <task id="LOCAL-00019" summary="home 20191207 发电量方案名称解决">
+      <created>1576245548411</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1576245548411</updated>
+    </task>
+    <task id="LOCAL-00020" summary="home 20191207 发电量方案名称解决">
+      <created>1576279682728</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1576279682729</updated>
+    </task>
+    <task id="LOCAL-00021" summary="home 20191207 发电量方案名称解决">
+      <created>1576280023571</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1576280023571</updated>
+    </task>
+    <task id="LOCAL-00022" summary="home 20191207 发电量方案名称解决">
+      <created>1576408004650</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1576408004650</updated>
+    </task>
+    <task id="LOCAL-00023" summary="home 20191207 发电量方案名称解决">
+      <created>1576419611004</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1576419611004</updated>
+    </task>
+    <task id="LOCAL-00024" summary="home 20191207 发电量方案名称解决">
+      <created>1576452641695</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1576452641695</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/auto_word" />
+    </ignored-roots>
+    <MESSAGE value="home 20191124" />
+    <MESSAGE value="home 20191201" />
+    <MESSAGE value="home 20191207" />
+    <MESSAGE value="home 20191207 发电量方案名称解决" />
+    <option name="LAST_COMMIT_MESSAGE" value="home 20191207 发电量方案名称解决" />
+  </component>
+</project>

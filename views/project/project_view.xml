@@ -1,0 +1,248 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="auto_word_project_list" model="ir.ui.view">
+        <field name="name">Project_Information List</field>
+        <field name="model">auto_word.project</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="project_name"/>
+                <field name="order_number"/>
+                <field name="project_capacity"/>
+                <field name="wind_attachment_ok"/>
+                <field name="electrical_attachment_ok"/>
+                <field name="civil_attachment_ok"/>
+                <field name="economic_attachment_ok"/>
+                <field name="report_attachment_id" widget="many2one_binary"/>
+            </tree>
+        </field>
+    </record>
+    <record id="auto_word_project_form" model="ir.ui.view">
+        <field name="name">Project_Information Form</field>
+        <field name="model">auto_word.project</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <header>
+                    <button name="button_project" type="object" groups="auto_word.project_group_user"
+                            string="提交信息"/>
+                    <button name="merge_project" type="object" groups="auto_word.project_group_user"
+                            string="合并报告"/>
+                </header>
+                <sheet>
+                    <group name="group_top" string="项目明细">
+                        <group name="group_left">
+                            <field name="project_name"/>
+                            <field name="Farm_words"/>
+                            <field name="Location_words"/>
+                            <field name="company_id" options="{'no_create_edit': 1}"/>
+                        </group>
+
+
+                        <group name="group_right">
+                            <field name="Lon_words"/>
+                            <field name="Lat_words"/>
+                            <field name="grid_price"/>
+                        </group>
+
+                    </group>
+
+                    <group>
+                        <field name="summary_txt"/>
+
+                    </group>
+                    <group name="group_right" string="风能资源" col="3">
+                        <group>
+                            <field name="TerrainType"/>
+                            <field name="area_words"/>
+                            <field name="max_wind_txt"/>
+                            <field name="Elevation_words"/>
+                            <field name="Relative_height_difference_words"/>
+                        </group>
+                        <group>
+                            <field name="name_tur_suggestion"/>
+                            <field name="hub_height_suggestion"/>
+                            <field name="capacity_suggestion"/>
+                            <field name="turbine_numbers_suggestion"/>
+                            <field name="project_capacity"/>
+
+                        </group>
+
+                        <group>
+                            <field name="IECLevel"/>
+                            <field name="main_wind_direction"/>
+                            <field name="PWDLevel"/>
+                            <field name="max_wind_txt"/>
+                            <field name="ongrid_power"/>
+                            <field name="Hour_words"/>
+                        </group>
+
+                    </group>
+
+                    <group>
+                        <field name="cft_name_words"/>
+                        <field name="cft_time_words"/>
+                        <field name="string_speed_words"/>
+                        <field name="string_deg_words"/>
+                        <field name="cft_TI_words"/>
+                    </group>
+
+
+                    <group name="group_sumbit" string="项目经济评价" col="3">
+                        <group name="group_left">
+                            <field name="static_investment_12"/>
+                            <field name="construction_assistance"/>
+                            <field name="equipment_installation"/>
+                            <field name="constructional_engineering"/>
+                            <field name="other_expenses"/>
+                            <field name="conservation_water_soil"/>
+
+                        </group>
+                        <group name="group_mid">
+                            <field name="capital_rate_12"/>
+                            <field name="interest_construction_loans_12"/>
+                            <field name="dynamic_investment_12"/>
+                            <field name="dynamic_investment_unit"/>
+                            <field name="static_investment_unit"/>
+                            <field name="grid_price"/>
+                        </group>
+
+                        <group name="group_right">
+                            <field name="Internal_financial_rate_before"/>
+                            <field name="Internal_financial_rate_after"/>
+                            <field name="payback_period"/>
+                            <field name="ROI_13"/>
+                            <field name="ROE_13"/>
+                            <field name="Internal_financial_rate_capital"/>
+                        </group>
+
+
+                    </group>
+
+
+                    <!--<group name="风机信息">-->
+                    <!--<field name="select_turbine_ids"/>-->
+                    <!--</group>-->
+
+                    <group name="group_road" string="土建提交明细" col="3" colspan="4">
+                        <!--<group name="group_left" decoration-bf="turbine_numbers_civil!=turbine_numbers" >-->
+                        <group col="3" colspan="4">
+                            <group>
+                                <field name="road_1_num"/>
+                                <field name="road_2_num"/>
+                                <field name="road_3_num"/>
+                                <field name="total_civil_length"/>
+                            </group>
+                            <group>
+                                <field name="TerrainType"/>
+                                <field name="basic_type"/>
+                                <field name="ultimate_load"/>
+                                <field name="fortification_intensity"/>
+                            </group>
+                            <group>
+                                <field name="line_1"/>
+                                <field name="line_2"/>
+                                <field name="permanent_land_area"/>
+                                <field name="permanent_land_area"/>
+                            </group>
+                        </group>
+                    </group>
+
+                    <group col="3">
+                        <group name="group_left">
+                            <field name="civil_all"/>
+                            <field name="excavation"/>
+                            <field name="backfill"/>
+                            <field name="spoil"/>
+                        </group>
+
+                        <group name="group_mid">
+                            <field name="EarthExcavation_WindResource"/>
+                            <field name="StoneExcavation_WindResource"/>
+                            <field name="EarthWorkBackFill_WindResource"/>
+                            <field name="Volume"/>
+                            <field name="Cushion"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="Reinforcement"/>
+                            <field name="stake_number"/>
+                            <field name="SinglePileLength"/>
+                            <field name="M48PreStressedAnchor"/>
+                            <field name="C80SecondaryGrouting"/>
+                        </group>
+
+
+                    </group>
+
+                    <group name="group_electrical" string="电气提交明细">
+                        <group name="group_left">
+                            <!--<field name="voltage_class"/>-->
+                            <!--<field name="length_single_jL240"/>-->
+                            <!--<field name="length_double_jL240"/>-->
+                            <!--<field name="yjlv95"/>-->
+                            <!--<field name="yjv300"/>-->
+
+                            <field name="Status"/>
+                            <field name="Grade"/>
+                            <field name="Capacity"/>
+                            <field name="circuit_number"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="jidian_air_wind"/>
+                            <field name="jidian_cable_wind"/>
+                            <!--<field name="overhead_line"/>-->
+                            <!--<field name="direct_buried_cable"/>-->
+                            <field name="overhead_line_num"/>
+                            <field name="direct_buried_cable_num"/>
+                            <field name="main_booster_station_num"/>
+                        </group>
+                    </group>
+
+                    <!--<group name="group_road" string="投资明细">-->
+                    <!--<group name="group_left">-->
+                    <!--<field name="case_name"/>-->
+                    <!--<field name="investment_E1"/>-->
+                    <!--<field name="investment_E2"/>-->
+                    <!--<field name="investment_E3"/>-->
+                    <!--<field name="investment_E4"/>-->
+                    <!--</group>-->
+                    <!--<group name="group_right">-->
+                    <!--<field name="investment_E5"/>-->
+                    <!--<field name="investment_E6"/>-->
+                    <!--<field name="investment_E7"/>-->
+                    <!--<field name="investment"/>-->
+                    <!--<field name="investment_unit"/>-->
+                    <!--</group>-->
+                    <!--</group>-->
+
+                    <!--<group string="盈利能力分析">-->
+                    <!--<group name="group_top">-->
+                    <!--<field name="static_investment_13"/>-->
+                    <!--<field name="static_investment_unit"/>-->
+                    <!--<separate/>-->
+                    <!--<field name="Internal_financial_rate_before"/>-->
+                    <!--<field name="Internal_financial_rate_after"/>-->
+                    <!--<field name="Internal_financial_rate_capital"/>-->
+
+                    <!--</group>-->
+                    <!--<group name="group_top">-->
+                    <!--<field name="dynamic_investment_13"/>-->
+                    <!--<field name="dynamic_investment_unit"/>-->
+                    <!--<separate/>-->
+                    <!--<field name="payback_period"/>-->
+                    <!--<field name="ROI_13"/>-->
+                    <!--<field name="ROE_13"/>-->
+                    <!--</group>-->
+                    <!--</group>-->
+
+                    <!--<group name="group_mid" string="项目资料">-->
+                    <!--<field name="message_main_attachment_id"/>-->
+                    <!--</group>-->
+                    <group name="group_bottom">
+                        <field name="report_attachment_id_output1"/>
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+</odoo>
+

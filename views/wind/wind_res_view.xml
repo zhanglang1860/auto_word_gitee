@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="auto_word_wind_res_list" model="ir.ui.view">
+        <field name="name">Wind_Information Form</field>
+        <field name="model">auto_word_wind.res</field>
+        <field name="arch" type="xml">
+            <!--<header>-->
+                <!--<button name="wind_res_submit" type="object" groups="auto_word.wind_group_user"-->
+                            <!--string="提交结果" confirm="是否确认提交该项目风资源资料？"/>-->
+            <!--</header>-->
+            <tree>
+                <field name="project_id_input"/>
+                <field name="case_name"/>
+                <field name="tur_id"/>
+                <field name="X"/>
+                <field name="Y"/>
+                <field name="Z"/>
+                <field name="H"/>
+                <field name="TurbineCapacity"/>
+                <!--<field name="Latitude"/>-->
+                <!--<field name="Longitude"/>-->
+                <!--<field name="WeibullA"/>-->
+                <!--<field name="WeibullK"/>-->
+                <field name="EnergyDensity"/>
+                <field name="PowerGeneration"/>
+                <field name="PowerGeneration_Weak"/>
+                <field name="AverageWindSpeed"/>
+                <field name="AverageWindSpeed_Weak"/>
+                <field name="Weak"/>
+                <!--<field name="WindShear_Avg"/>-->
+                <field name="InflowAngle_Max"/>
+                <!--<field name="InflowAngle_Max_Deg"/>-->
+                <!--<field name="NextTur"/>-->
+                <!--<field name="NextLength_M"/>-->
+                <!--<field name="Sectors"/>-->
+
+                <field name="rate"/>
+                <field name="ongrid_power"/>
+                <field name="hours_year"/>
+
+            </tree>
+        </field>
+    </record>
+
+    <record id="auto_word_wind_res_form" model="ir.ui.view">
+        <field name="name">Wind reslut Form</field>
+        <field name="model">auto_word_wind.res</field>
+        <field name="arch" type="xml">
+            <form>
+
+            </form>
+        </field>
+    </record>
+
+
+    <record id="view_search_wind_res" model="ir.ui.view">
+        <field name="name">Wind reslut Filters</field>
+        <field name="model">auto_word_wind.res</field>
+        <field name="arch" type="xml">
+        <search>
+          <field name="case_name"/>
+          <filter name="filter_inactive"
+                  string="Inactive"
+                  context="{'group_by': 'case_name'}"/>
+        </search>
+
+    </field>
+  </record>
+
+
+
+    <record id="wind_res_form_list" model="ir.ui.view">
+        <field name="name">WindInformationForm</field>
+        <field name="model">auto_word_wind_res.form</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="project_id"/>
+                <field name="content_id"/>
+                <field name="case_name"/>
+	            <field name="create_date"/>
+                <field name="__last_update"/>
+            </tree>
+        </field>
+    </record>
+
+
+     <record id="wind_res_form_form" model="ir.ui.view">
+        <field name="name">WindInformationForm</field>
+        <field name="model">auto_word_wind_res.form</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="wind_res_cal" type="object" groups="auto_word.wind_group_user"
+                            string="计算"/>
+                    <button name="wind_res_submit" type="object" groups="auto_word.wind_group_user"
+                            string="提交结果" confirm="是否确认提交该项目风资源资料？"/>
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="project_id"/>
+                            <field name="content_id"/>
+                            <field name="rate"/>
+
+                        </group>
+                        <group name="group_right">
+                            <field name="case_name"/>
+                            <field name="hub_height_calcuation"/>
+                            <field name="ongrid_power_sum"/>
+                            <field name="hours_year_average"/>
+                        </group>
+                    </group>
+
+                    <group string="折减率备注">
+                        <field name="note"/>
+                    </group>
+
+                    <group name="group_bot">
+                        <field name="auto_word_wind_res"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+
+</odoo>
+

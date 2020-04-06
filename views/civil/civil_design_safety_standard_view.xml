@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="auto_word_civil_DesignSafetyStandard_form" model="ir.ui.view">
+        <field name="name">设计安全标准</field>
+        <field name="model">auto_word_civil.design_safety_standard</field>
+        <field name="arch" type="xml">
+            <form string="设计安全标准">
+                <header>
+                  <button name="button_civil_design_safety_standard" type="object" groups="auto_word.civil_group_user"
+                           string="提交设计安全标准" confirm="是否确认提交该项目设计安全标准？" />
+                </header>
+
+                <sheet>
+                     <group name="group_top">
+                         <field name="civil_id" />
+                     </group>
+
+                    <group string="工程等别和建筑物级别、结构安全等级">
+                         <group name="group_left">
+                             <field name="ProjectLevel" />
+                             <field name="ProjectSize" />
+                             <field name="EStructuralSafetyLevel" />
+                             <field name="TStructuralSafetyLevel" />
+                         </group>
+                         <group name="group_right">
+                             <field name="BuildingLevel" />
+                             <field name="FloodDesignLevel" />
+                             <field name="ReFloodDesignLevel" />
+                             <!--<field name="TerrainType_words" />-->
+                             <field name="TurbineTowerDesignLevel" />
+                        </group>
+                    </group>
+                    <group string="抗震设计标准">
+                        <group name="group_left">
+                            <field name="BuildingEarthquakeDesignLevel" />
+                            <field name="DesignEarthquakeLevel" />
+                            <field name="Earthquake_g" />
+                        </group>
+                        <group name="group_right">
+                            <field name="BuildingYardLevel" />
+                            <field name="BuildingYardLevel_word" />
+                        </group>
+                    </group>
+                    <!--<group name="group_bottom">-->
+                        <!--<field name="generator_Output" />-->
+                    <!--</group>-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
+
+

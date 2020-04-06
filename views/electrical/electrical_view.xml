@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="view_tree_electrical" model="ir.ui.view">
+        <field name="name">Electrical_Information tree</field>
+        <field name="model">auto_word.electrical</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name = "project_id"/>
+                <field name = "version_id"/>
+                <field name = "write_date"/>
+                <field name = "write_uid"/>
+            </tree>
+
+        </field>
+    </record>
+    <record id="view_form_electrical" model="ir.ui.view">
+        <field name="name">Electrical_Information Form</field>
+        <field name="model">auto_word.electrical</field>
+        <field name="arch" type="xml">
+            <form string="Electrical">
+                <header>
+                  <button name="take_electrical_result" type="object" groups="auto_word.wind_group_user"
+                           string="计算" class="btn btn-info"/>
+                  <button name="electrical_generate" type="object" groups="auto_word.electrical_group_user"
+                           string="生成报告" />
+                  <button name="button_electrical" type="object"  groups="auto_word.electrical_group_user"
+                           string="提交报告" confirm="是否确认提交该项目电气资料？" />
+                  <button name="electrical_refresh" type="object" groups="auto_word.civil_group_user"
+                           string="刷新" class="btn btn-info"/>
+               </header>
+                <sheet>
+                    <group name="group_top">
+                         <group name="group_left">
+                            <field name="project_id" />
+                            <field name="version_id" />
+                         </group>
+                         <group name="group_right">
+                            <field name="turbine_numbers" />
+                            <field name="name_tur_suggestion" />
+                            <field name="hub_height_suggestion" />
+                         </group>
+                    </group>
+                    <group name="group_mid">
+                        <group name="group_electrical_left">
+                            <field name="voltage_class" />
+                            <field name="circuit_number" />
+                            <field name="overhead_line_num" />
+                            <field name="direct_buried_cable_num" />
+                            <separator/>
+                            <field name="line_1" />
+                            <field name="line_2" />
+                        </group>
+                        <group name="group_electrical_right">
+                            <field name="yjlv95" />
+                            <field name="yjv300" />
+                            <field name="length_single_jL240" />
+                            <field name="length_double_jL240" />
+                            <separator/>
+                            <field name="jidian_air_wind" />
+                            <field name="jidian_cable_wind" />
+                        </group>
+
+                        <!--<group name="group_road">-->
+                            <!--&lt;!&ndash;<field name="line_1" />&ndash;&gt;-->
+                            <!--&lt;!&ndash;<field name="line_2" />&ndash;&gt;-->
+                            <!--&lt;!&ndash;<field name="overhead_line" />&ndash;&gt;-->
+                            <!--&lt;!&ndash;<field name="direct_buried_cable" />&ndash;&gt;-->
+                            <!--&lt;!&ndash;<field name="main_booster_station_num" />&ndash;&gt;-->
+                        <!--</group>-->
+                    </group>
+                    <group name="group_buttom">
+                        <field name="report_attachment_id" />
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+
+    <record id="view_tree_electrical_infor" model="ir.ui.view">
+        <field name="name">Electrical_Information_tree</field>
+        <field name="model">auto_word_electrical.infor</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name = "project_id"/>
+                <field name = "version_id"/>
+                <field name = "write_date"/>
+                <field name = "write_uid"/>
+            </tree>
+
+        </field>
+    </record>
+    <record id="view_form_electrical_infor" model="ir.ui.view">
+        <field name="name">Electrical_Information_Form</field>
+        <field name="model">auto_word_electrical.infor</field>
+        <field name="arch" type="xml">
+            <form string="Electrical">
+                <header>
+                 <button name="generate_electrical_infor" type="object" groups="auto_word.electrical_group_user"
+                           string="生成报告" />
+                  <button name="submit_electrical_infor" type="object"  groups="auto_word.electrical_group_user"
+                           string="提交报告" confirm="是否确认提交该项目电气资料？" />
+               </header>
+                <sheet>
+                    <group name="group_top">
+                         <group name="group_left">
+                            <field name="project_id" />
+                            <field name="booster_station_construction_site" />
+                         </group>
+                         <group name="group_right">
+                            <field name="version_id" />
+                          </group>
+                    </group>
+                    <group name="group_mid">
+                        <field name="socio_economic_infor" />
+                        <field name="energy_development_plan" />
+                        <field name="power_system_development_plan" />
+                        <field name="engineering_construction_necessity" />
+                        <field name="project_electrical_description" />
+                    </group>
+                   <group name="group_buttom">
+                        <field name="report_attachment_id" />
+                    </group>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+
+
+</odoo>

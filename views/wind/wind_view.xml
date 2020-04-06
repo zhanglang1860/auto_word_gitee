@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="auto_word_wind_list" model="ir.ui.view">
+        <field name="name">Wind_Information list</field>
+        <field name="model">auto_word.wind</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="project_id"/>
+                <field name="content_id"/>
+                <field name="name_tur_suggestion"/>
+                <field name="turbine_numbers_suggestion"/>
+                <field name="hub_height_suggestion"/>
+                <field name="project_capacity"/>
+                <field name="version_id"/>
+                <field name="write_date"/>
+                <field name="write_uid"/>
+            </tree>
+
+        </field>
+    </record>
+    <record id="auto_word_wind_form" model="ir.ui.view">
+        <field name="name">Wind_Information Form</field>
+        <field name="model">auto_word.wind</field>
+        <field name="arch" type="xml">
+            <form string="Wind">
+                <header>
+                    <!--<button name="wind_open" type="object" groups="auto_word.wind_group_user"-->
+                            <!--string="打开Excel"/>-->
+                    <button name="wind_generate" type="object" groups="auto_word.wind_group_user"
+                            string="生成报告"/>
+                    <button name="submit_wind" type="object" groups="auto_word.wind_group_user"
+                            string="提交报告" confirm="是否确认提交该项目风资源资料？"/>
+
+                    <button name="action_get_attachment_view" class="oe_stat_button" icon="fa-book" type="object">
+                            <field name="attachment_number" widget="statinfo" string="附件上传"/>
+                        </button>
+
+
+                </header>
+                <sheet>
+                    <group name="group_top">
+                        <group name="group_left">
+                            <field name="project_id"/>
+                            <field name="version_id"/>
+                            <field name="content_id"/>
+                            <field name="Temperature_txt"/>
+                            <field name="air_density_words"/>
+                            <!--<field name="Lat_words" attrs="{'invisible': [('Lat_words', '&lt;', 30)]}" style='color:red'/>-->
+                            <field name="Elevation_words"/>
+                            <field name="Relative_height_difference_words"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="TerrainType"/>
+                            <field name="area_words"/>
+                            <field name="farm_speed_range_words"/>
+                            <field name="IECLevel"/>
+                            <field name="PWDLevel"/>
+                            <field name="max_wind_txt"/>
+                        </group>
+                    </group>
+                    <group name="group_right" string="风能资源">
+                        <group name="group_right">
+                            <field name="cft_name_words"/>
+                            <field name="cft_number_words"/>
+                        </group>
+                        <group name="group_left">
+
+                            <field name="Lon_words"/>
+                            <field name="Lat_words"/>
+                        </group>
+                    </group>
+                    <group name="group_left">
+                        <field name="cft_time_words"/>
+                        <field name="string_speed_words"/>
+                        <field name="string_deg_words"/>
+                        <field name="cft_TI_words"/>
+                    </group>
+
+                    <group string="限制性因素排查">
+                        <group name="group_right">
+                            <field name="limited_1"/>
+                            <field name="limited_2"/>
+                        </group>
+                        <group name="group_left">
+                            <field name="limited_3"/>
+                        </group>
+                    </group>
+
+
+                    <group string="机型推荐">
+                        <group name="group_left">
+                            <field name="recommend_id"/>
+                            <field name="name_tur_suggestion"/>
+                            <field name="turbine_numbers_suggestion"/>
+                            <field name="project_capacity"/>
+                            <field name="hub_height_suggestion"/>
+                            <field name="rotor_diameter_suggestion"/>
+                        </group>
+                        <group name="group_right">
+                            <field name="weak"/>
+                            <field name="rate"/>
+                            <field name="ongrid_power"/>
+                            <field name="hours_year"/>
+                            <field name="capacity_coefficient"/>
+                            <field name="investment_turbines_kws"/>
+                        </group>
+                    </group>
+
+                    <group string="方案比选">
+                        <field name="case_names"/>
+                    </group>
+
+                    <!--<group string="方案结果">-->
+                        <!--<field name="auto_word_wind_res"/>-->
+                    <!--</group>-->
+
+
+
+                    <group name="group_bottom">
+                        <!--<field name="generator_ids" />-->
+                        <!--<field name="project_res" />-->
+                        <field name="report_attachment_id2"/>
+                        <field name="report_attachment_id"/>
+                    </group>
+
+                </sheet>
+
+            </form>
+
+        </field>
+    </record>
+
+</odoo>

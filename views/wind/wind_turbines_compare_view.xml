@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="auto_word_wind_turbines_compare_form" model="ir.ui.view">
+        <field name="name">机型比选表</field>
+        <field name="model">auto_word_wind_turbines.compare</field>
+        <field name="arch" type="xml">
+            <form string="机型方案比选表">
+                <header>
+                 <button name="cal_compare_result" type="object" groups="auto_word.wind_group_user"
+                           string="计算" class="btn btn-info"/>
+                 <button name="submit_turbines_compare" type="object" groups="auto_word.wind_group_user"
+                           string="提交结果" class="btn btn-info"/>
+                 <button name="result_refresh" type="object" groups="auto_word.wind_group_user"
+                           string="还原结果" class="btn btn-info"/>
+
+               </header>
+                <sheet>
+                    <group name="group_top">
+
+                        <group name="group_left">
+                            <field name="project_id" />
+                        </group>
+                        <group name="group_left">
+                            <!--<field name="TerrainType_turbines_compare" />-->
+                            <!--<field name="content_id" domain="[('project_id.project_name', '=', self)]" />-->
+                            <field name="content_id" />
+                        </group>
+                    </group>
+                    <group name="group_mid">
+                        <field name="case_ids" />
+                    </group>
+
+                    <!--<group name="group_mid">-->
+                        <!--<group name="left">-->
+                            <!--<field name="tower_weight" />-->
+                            <!--<field name="turbine_numbers" />-->
+                            <!--<field name="rotor_diameter_case" />-->
+                        <!--</group>-->
+                        <!--<group name="right">-->
+                            <!--<field name="capacity" />-->
+                            <!--<field name="farm_capacity" />-->
+                        <!--</group>-->
+                    <!--</group>-->
+
+                    <group name="group_mid">
+                        <group name="left">
+                            <field name="res_form" />
+                            <field name="capacity_words" />
+                            <field name="farm_capacity" />
+                        </group>
+                        <group name="right">
+                            <field name="hub_height_suggestion" />
+                            <field name="ongrid_power" />
+                            <field name="hours_year" />
+                        </group>
+                    </group>
+                    <group name="group_bottom">
+                        <group name="group_left">
+                            <field name="jidian_air_wind" />
+                            <field name="jidian_cable_wind" />
+                            <!--<field name="investment_turbines_kws" />-->
+                            <field name="investment_E1" />
+                            <field name="investment_E2" />
+                            <field name="investment_E3" />
+                        </group>
+                        <group name="group_right">
+                            <field name="investment_E4" />
+                            <field name="investment_E5" />
+                            <field name="investment_E6" />
+                            <field name="investment_E7" />
+                            <field name="investment" />
+                            <field name="investment_unit"/>
+                        </group>
+
+                    </group>
+
+
+                    <!--<group name="group_bottom">-->
+                        <!--<field name="generator_Output" />-->
+                    <!--</group>-->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="auto_word_wind_turbines_compare_list" model="ir.ui.view">
+        <field name="name">机型方案比选表</field>
+        <field name="model">auto_word_wind_turbines.compare</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="project_id"/>
+                <field name="case_name" />
+                <field name="name_tur" />
+                <field name="hub_height_suggestion" />
+                <field name="turbine_numbers" />
+                <field name="farm_capacity" />
+
+            </tree>
+        </field>
+    </record>
+</odoo>
+
